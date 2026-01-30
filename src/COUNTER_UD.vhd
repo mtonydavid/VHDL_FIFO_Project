@@ -52,7 +52,7 @@ begin
     );
   
   -- MUX: se CLEAR azzera, altrimenti incrementa/decrementa
-  count_next <= (others => '0') when CLEAR = '1' else count_mod;
+  count_next <= "0000" when CLEAR = '1' else count_mod;
   
   -- Registro
   REG: REG_PP
@@ -67,4 +67,5 @@ begin
   
   COUNT <= count_reg;
   
+
 end STRUCTURAL;
