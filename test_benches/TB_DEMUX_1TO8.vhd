@@ -33,8 +33,7 @@ begin
         S <= "111";
         wait for 20 ns;
         
-        -- ========== Test con Z=1 (solo un'uscita alta) ==========
-        
+        -- Test con Z=1 (solo un'uscita alta) 
         Z <= '1';
         
         -- Seleziona uscita 0
