@@ -28,8 +28,6 @@ begin
     
     process
     begin
-        -- ========== TEST ADDIZIONE (UD=0) ==========
-        
         -- Test 1: 5 + 3 = 8
         X <= "0101";
         Y <= "0011";
@@ -48,9 +46,7 @@ begin
         UD <= '0';
         wait for 20 ns;
         
-        wait for 20 ns;
-        
-        -- ========== TEST SOTTRAZIONE (UD=1) ==========
+        wait for 20 ns;        
         
         -- Test 4: 8 - 3 = 5
         X <= "1000";
@@ -75,7 +71,7 @@ begin
         Y <= "0001";
         UD <= '1';
         wait for 20 ns;
-        
+            
         wait;
     end process;
     
